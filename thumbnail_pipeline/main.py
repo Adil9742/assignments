@@ -6,9 +6,8 @@ def main():
     base_dir = os.getcwd()
     input_dir = os.path.join(base_dir, "producer")
     output_dir = os.path.join(base_dir, "consumer")
-
-   # Ensure the output directory exists
-    os.makedirs(output_dir, exist_ok=True)
+ 
+    os.makedirs(output_dir, exist_ok=True)  
 
     queue = Queue()  # Queue for communication between producer and consumer
 
